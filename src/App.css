@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  text-align: center;
+  color: rgb(10, 10, 10);
+  background-color: rgb(226, 226, 241);
+  font-family: sans-serif;
+}
+
+h1 {
+  color:  #050505;
+  /* text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white; */
+  text-align: center;
+}
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.containers {
+  /* width: 300px;
+  height: 500px; */
+  margin: 10px;
+  /* background-color: #0dff00; */
+  border-radius: 10px;
+}
+
+.container img {
+  width: 280px;
+  height: 280px;
+}
+
+.show img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+textarea {
+  width: 80%;
+  font-size: .8em;
+  height: 6em;
+  border-radius: 10px;
+}
+
+.errors {
+  list-style: none;
+  color: yellow;
+  padding-left: 0;
+}
