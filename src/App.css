@@ -70,9 +70,10 @@ h1 {
 }
 
 .show img {
-  height: 500px;
-  width: 100%;
-  object-fit: cover;
+  width: 350px;
+  height: 300px;
+  /* width: 100%; */
+  /* object-fit: cover; */
 }
 
 

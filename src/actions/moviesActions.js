@@ -10,3 +10,16 @@ export const setMovies = () => {
         })
     )}
 }
+
+export const setSelectedMovie = (id) => {
+    return dispatch => {
+        fetch(API + "/movies/" + id)
+        .then(res => res.json())
+        .then(movie => dispatch({
+            type: "SET_SELECTED_MOVIE",
+            payload: movie
+        })
+    )}
+}
+
+export const unsetMovie = () => ({type: "UNSET_MOVIE"})
