@@ -5,12 +5,12 @@
   display: flex;
   align-items: center;
   justify-content:center;
-  /* padding: 20px 0px 20px 0px; */
+  padding: 20px 0px 20px 0px;
   position: absolute;
   z-index: 1;
   width: 100%;
   overflow: auto;
-  /* background-color: #836060; */
+  background-color: #9f81b4;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
 }
@@ -32,9 +32,6 @@
   padding: 0;
   overflow: auto;
   float: left;
-
-  /* background-color: #83606042; */
-
 }
 
 .nav-li {
@@ -50,7 +47,7 @@ li a {
 }
 
 li a:hover {
-  background-color: rgb(201, 201, 235);
+  background-color: #b398c7;
 }
 
 

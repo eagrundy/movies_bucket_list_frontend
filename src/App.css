@@ -24,6 +24,19 @@
   color: white;
 }
 
+.header {
+  background-color: #dacbe0;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 80px;
+  top:350px;
+}
+p {
+  font-size: 20px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -99,11 +112,23 @@ h1 {
   /* object-fit: cover; */
 }
 
+input {
+  width: 20%;
+  /* font-size: .8em; */
+  height: 3em;
+  border-radius: 10px;
+}
 
 textarea {
-  width: 80%;
+  width: 30%;
   font-size: .8em;
-  height: 6em;
+  height: 7em;
+  border-radius: 10px;
+}
+
+#buttons {
+  margin-left:15px;
+  padding: 5px;
   border-radius: 10px;
 }
 
