@@ -7,6 +7,7 @@ import { connect } from 'react-redux'
 import { setMovies } from './actions/moviesActions';
 // import { addMovie } from './actions/moviesActions';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Header from './components/header/Header';
 import Navbar from './components/header/Navbar';
 import Home from './components/header/Home';
 import About from './components/header/About';
@@ -22,11 +23,11 @@ class App extends Component {
   render(){
     return (
       <>
-      <h1>Movies Bucket List</h1>
       <Router>
-      <div className="sticky">
+        <div className="sticky">
+        <Header />
         <Navbar />
-      </div>
+        </div>
       <Switch>
         <Route exact path="/" component={ Home } />
         <Route exact path="/about" component= { About } />

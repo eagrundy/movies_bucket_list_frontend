@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { setSelectedMovie, unsetMovie } from '../actions/moviesActions'
+import { deleteMovie } from '../actions/moviesActions'
 
 class MovieShow extends Component {
 
@@ -16,20 +17,21 @@ class MovieShow extends Component {
       }
 
     render = () => {
-        const { title, image_url, description, watch, category, history } = this.props
+        const { title, image_url, description, watch, id, history } = this.props
         return(
             // <>
             <div className="show">
-                <br /><br /><br /><br /><br />
-            <br /><br />
+                 <br /><br /><br /><br /><br /><br />
             <h1>{ title }</h1>
             <p><img src={ image_url } alt={ title }/></p>
             <p><strong>Description:</strong> { description }</p>
             <p><strong>Watch by:</strong> { watch }</p>
-            <p><strong>Category:</strong> { category }</p>
-            <button onClick={() => window.open( `https://www.google.com/search?q=${title + "," + "where to watch"}`)} >Click Here</button> to see where to watch the movie {title}.<br /><br />
-            <button onClick={() => window.open( `https://www.google.com/search?q=${title + "," + "trailer"}`)} >Click Here</button> to see {title}'s trailer.<br /><br />
-            <button onClick={ history.goBack }>Back to Main Page</button>
+            {/* <p><strong>Category:</strong> { category }</p> */}
+            <button id="buttons" onClick={() => window.open( `https://www.google.com/search?q=${title}, where to watch`)} >Click Here</button> to see where to watch the movie {title}.<br /><br />
+            <button id="buttons" onClick={() => window.open( `https://www.google.com/search?q=${title}, trailer`)} >Click Here</button> to see {title}'s trailer.<br /><br />
+            <button id="buttons" onClick={ history.goBack }>Back to Main Page</button><br /><br />
+            <button id="buttons" onClick={() => this.props.deleteMovie(id, this.props.history)}>Delete this movie</button>
+
             <br /><br />
             </div>
             // </>
@@ -40,4 +42,4 @@ class MovieShow extends Component {
 const mapStateToProps = (state) => ({
     ...state.movies.selectedMovie
 })
-export default connect( mapStateToProps, { setSelectedMovie, unsetMovie } )(MovieShow)
+export default connect( mapStateToProps, { setSelectedMovie, unsetMovie, deleteMovie } )(MovieShow)

@@ -36,6 +36,8 @@ class MovieForm extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
+                <br></br>
+                <br></br>
                <h3>Add A New Movie</h3>
                <form onSubmit= { this.handleSubmit }>
                    <div className="container">
