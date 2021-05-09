@@ -9,7 +9,7 @@ Add movies you have never seen but would like to watch it someday.
 
 **Demo Video**
 
-[Watch it here] (https://youtu.be/)
+[Watch it here](https://youtu.be/)
 
 **Description:**
 
@@ -25,16 +25,16 @@ Since I am the most procrastinator in watching new and old movies on tv, and sin
 * Fork a copy and download the files from the backend and frontend.
 * Make sure you bundle install after cloning it.
 * Additional installs on the backend include:
-    $npm install --save redux-thunk
-    $npm install react-redux
-    $npm install react-router-dom
-    $npm install redux-devtools-extension
-* Run $rails db:migrate AND $rails db:seed to seed the database on the frontend.
+    $ npm install --save redux-thunk
+    $ npm install react-redux
+    $ npm install react-router-dom
+    $ npm install redux-devtools-extension
+* Run $ rails db:migrate AND $ rails db:seed to seed the database on the frontend.
 * Start your rails server by going into the backend folder: 
-    $cd backend
-    $rails s 
+    $ cd backend
+    $ rails s 
 * On the front end, start your npm server by going into the backend folder:
-    $npm start or $yarn start
+    $ npm start or $ yarn start
 
 **Copyright:**
 This is purely for recreational purposes. All rights reserved to the Studios that created the movies.
