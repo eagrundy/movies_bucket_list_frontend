@@ -8,6 +8,7 @@ import { setMovies } from './actions/moviesActions';
 // import { addMovie } from './actions/moviesActions';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './components/header/Header';
+import Footer from './components/Footer';
 import Navbar from './components/header/Navbar';
 import Home from './components/header/Home';
 import About from './components/header/About';
@@ -35,6 +36,7 @@ class App extends Component {
         <Route exact path="/movies/new" component={ MovieForm} />
         <Route exact path="/movies/:id" component={MovieShow}/>
       </Switch>
+      <Footer />
       </Router>
       </>
     );

@@ -6,7 +6,6 @@ class Home extends Component {
     render() {
         return (
             <div className="welcome">
-                <br /><br /><br /><br /><br />
                 <video autoPlay muted loop id="myVideo">
                     <source src="movieintro.mp4" type="video/mp4" />
                 </video>

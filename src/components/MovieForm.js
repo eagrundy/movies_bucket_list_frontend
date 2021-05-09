@@ -38,9 +38,9 @@ class MovieForm extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
-               <h3>Add A New Movie</h3>
                <form onSubmit= { this.handleSubmit }>
-                   <div className="container">
+                   <div className="form">
+                        <h3>Add A New Movie</h3>
                        <label>Title: </label>
                        <br />
                        <input type="text" id="title" name="title" value={ this.state.title } onChange={ this.handleChange }/>
@@ -52,13 +52,13 @@ class MovieForm extends Component {
                        <label>Category: </label>
                        <br />
                        {/* <select>
-                           <option value={ this.state.category_attributes} onChange={ this.handleChange}>Drama</option>
-                           <option value={ this.state.category_attributes} onChange={ this.handleChange}>Comedy</option>
-                           <option value={ this.state.category_attributes} onChange={ this.handleChange }>Mistery</option>
-                           <option value={ this.state.category_attributes} onChange={ this.handleChange }>Fiction</option>
-                           <option value={ this.state.category_attributes} onChange={ this.handleChange }>Thriller</option>
-                           <option value={ this.state.category_attributes} onChange={ this.handleChange }>Action</option>
-                           <option value={ this.state.category_attributes} onChange={ this.handleChange }>Romance</option>
+                           <option value=>Drama</option>
+                           <option value=>Comedy</option>
+                           <option value=>Mistery</option>
+                           <option value=>Fiction</option>
+                           <option value=>Thriller</option>
+                           <option value=>Action</option>
+                           <option value=>Romance</option>
                        </select> */}
                        <input type="text" id="category_attributes" name="category_attributes" value={ this.state.category_attributes } onChange={ this.handleChange }/>
                        <br /><br />
