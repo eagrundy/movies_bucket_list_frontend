@@ -12,6 +12,7 @@ const initialMovieState = {
   }
   
   const moviesReducer = (state=initialMovieState, action) => {
+    // debugger;
     switch (action.type){
       case "SET_MOVIES":
         return {...state, movies: action.payload}
@@ -19,10 +20,15 @@ const initialMovieState = {
         return {...state, selectedMovie: action.payload}
       case "UNSET_MOVIE":
         return {...state, selectedMovie: nullMovie}
-      default:
-        return {...state}
+      case "ADD_MOVIE":
+        // return [...state, action.payload]
+        return {...state, movies: [...state.movies, action.movie]}
+      case "DELETE_MOVIE":
+        return {...state, movies: state.movies.filter(movie => action.movie.id !== movie.id)} 
+        default:
+        return state;
     }
   }
   
-  export default moviesReducer
+  export default moviesReducer;
   

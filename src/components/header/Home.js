@@ -7,10 +7,13 @@ class Home extends Component {
         return (
             <div className="welcome">
                 <br /><br /><br /><br /><br />
-                <h6>All Rights Reserved to Universal Pictures</h6>
                 <video autoPlay muted loop id="myVideo">
                     <source src="movieintro.mp4" type="video/mp4" />
                 </video>
+
+                <div className="video-content">
+                <h5>All Rights Reserved to Universal Pictures</h5>
+                </div>
             </div>
         )
     }

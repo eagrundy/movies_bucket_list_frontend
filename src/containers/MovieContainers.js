@@ -1,16 +1,27 @@
-import React from 'react'
+// import React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import MovieContainer from '../components/MovieContainer'
 
-const MovieContainers = (props) => {
-    return(
-    <div className="containers">
-        {props.movies.map(movie => <MovieContainer key={movie.id} {...movie} />)}
-    </div>)
+class MovieContainers extends Component {
+    render(){
+        return(
+        <div className="containers">
+            {this.props.movies.map(movie => <MovieContainer key={movie.id} {...movie} />)}
+        </div>
+        )
+    }
+    
+
 }
 
-const msp = (state) => ({
+const msp = (state) => {
+    return {
     movies: state.movies.movies
-})
+    }
+}
 
-export default connect(msp)(MovieContainers)
+// const MovieContainers = (props) => {
+    
+
+export default connect(msp)(MovieContainers);

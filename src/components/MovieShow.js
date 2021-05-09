@@ -16,20 +16,24 @@ class MovieShow extends Component {
       }
 
     render = () => {
-        const { title, image_url, description, deadline, history } = this.props
+        const { title, image_url, description, watch, category, history } = this.props
         return(
             // <>
             <div className="show">
                 <br /><br /><br /><br /><br />
-            <button onClick={ history.goBack }>Go back</button>
             <br /><br />
             <h1>{ title }</h1>
             <p><img src={ image_url } alt={ title }/></p>
             <p><strong>Description:</strong> { description }</p>
-            <p><strong>Watch by:</strong> { deadline }</p>
+            <p><strong>Watch by:</strong> { watch }</p>
+            <p><strong>Category:</strong> { category }</p>
+            <button onClick={() => window.open( `https://www.google.com/search?q=${title + "," + "where to watch"}`)} >Click Here</button> to see where to watch the movie {title}.<br /><br />
+            <button onClick={() => window.open( `https://www.google.com/search?q=${title + "," + "trailer"}`)} >Click Here</button> to see {title}'s trailer.<br /><br />
+            <button onClick={ history.goBack }>Back to Main Page</button>
+            <br /><br />
             </div>
             // </>
-        )   
+        )
     }
 }
 

@@ -22,4 +22,44 @@ export const setSelectedMovie = (id) => {
     )}
 }
 
+// a, c, b, d
+export const addMovie = (movie, history) => {
+    return dispatch => {
+        console.log("c")
+        fetch('http://localhost:3000/movies', {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                },
+            body: JSON.stringify({ movie })
+        })
+        .then(res=> res.json())
+        .then(movie => {
+            console.log("d")
+            dispatch({ type: "ADD_MOVIE", movie })
+            history.push("/movies")
+        })
+    }
+}
+
+export const deleteMovie = ( id, history ) => {
+    return dispatch => {
+
+        fetch(`http://localhost:3000/movies/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+        
+        })
+        .then(resp => resp.json())
+        .then(movie => {
+            dispatch({ type: "DELETE_MOVIE", movie })
+            history.push("/movies")
+        })
+    }
+}
+
 export const unsetMovie = () => ({type: "UNSET_MOVIE"})
