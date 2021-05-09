@@ -3,10 +3,10 @@ Add movies you have never seen but would like to watch it someday.
 
 ## A JavaScript/React application with a Ruby/Rails backend
 
-# Back-end
+**Back-end**
 [Link to backend](https://github.com/eagrundy/movies-bucket-list-backend)
 
-# Demo Video
+**Demo Video**
 
 [Watch it here] (https://youtu.be/)
 
