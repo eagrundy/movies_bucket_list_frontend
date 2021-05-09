@@ -10,7 +10,7 @@
   z-index: 1;
   width: 100%;
   overflow: auto;
-  background-color: #9f81b4;
+  background-color: #af9595;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
 }
@@ -32,6 +32,7 @@
   padding: 0;
   overflow: auto;
   float: left;
+  /* background-color: #83606042; */
 }
 
 .nav-li {
@@ -47,7 +48,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #b398c7;
+  background-color: #e9b4b478;
 }
 
 
