@@ -4,6 +4,7 @@ Add movies you have never seen but would like to watch it someday.
 ## A JavaScript/React application with a Ruby/Rails backend
 
 **Back-end**
+
 [Link to backend](https://github.com/eagrundy/movies-bucket-list-backend)
 
 **Demo Video**
@@ -11,6 +12,7 @@ Add movies you have never seen but would like to watch it someday.
 [Watch it here] (https://youtu.be/)
 
 **Description:**
+
 Since I am the most procrastinator in watching new and old movies on tv, and since I never watch a movie once I have missed it in the movie theater, I have decided to create an app where I am able to make a list of the movies I have never seen (most of them are classics and very famous) but that I would like to see it someday. The user can:
 -  Add a new movie to the list;
 - Click on the movie's title to see a description, a date as a deadline to watch the movie, a click button to search on google where to watch it, a button to search on google for the movie's trailer;
