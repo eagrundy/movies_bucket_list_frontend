@@ -82,9 +82,16 @@ body {
 }
 
 .welcome {
-  padding-top: 20px;
+  padding-top: 16px;
   text-align: center;
   top:450px;
+}
+
+.form {
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin-top: 110px;
 }
 
 h1 {
@@ -154,4 +161,13 @@ textarea {
   list-style: none;
   color: yellow;
   padding-left: 0;
+}
+
+.footer {
+  bottom: 0;
+  height: 2em;
+  left: 0;
+  position: relative;
+  font-size: small;
+  width:100%;
 }
