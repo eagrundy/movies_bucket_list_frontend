@@ -62,4 +62,9 @@ export const deleteMovie = ( id, history ) => {
     }
 }
 
+export const handleSearchFormChange = (e) => ({
+    type: "FILTERS_FORM_CHANGE",
+    payload: { name: e.target.name, value: e.target.value}
+})
+
 export const unsetMovie = () => ({type: "UNSET_MOVIE"})

@@ -21,7 +21,7 @@ class MovieShow extends Component {
         return(
             // <>
             <div className="show">
-                 <br /><br /><br /><br /><br /><br />
+                 <br /><br /><br /><br /><br /><br /><br />
             <h1>{ title }</h1>
             <p><img src={ image_url } alt={ title }/></p>
             <p><strong>Description:</strong> { description }</p>

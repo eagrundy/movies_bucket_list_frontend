@@ -7,9 +7,12 @@ const nullMovie = {
 }
 
 const initialMovieState = {
-    movies: [],
-    selectedMovie: nullMovie
+  movies: [],
+  selectedMovie: nullMovie,
+  filtersForm: {
+    search: ""
   }
+}
   
   const moviesReducer = (state=initialMovieState, action) => {
     // debugger;
@@ -25,6 +28,13 @@ const initialMovieState = {
         return {...state, movies: [...state.movies, action.movie]}
       case "DELETE_MOVIE":
         return {...state, movies: state.movies.filter(movie => action.movie.id !== movie.id)} 
+      case "FILTERS_FORM_CHANGE":
+      return {...state, filtersForm: {
+        ...state.filtersForm,
+        // if the payload's name is "content", this will update the
+        // content key in the reviewForm in state with the new payload value
+        [action.payload.name]: action.payload.value
+      }}
         default:
         return state;
     }
