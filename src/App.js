@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Navbar from './components/header/Navbar';
 import Home from './components/header/Home';
 import About from './components/header/About';
+import Contact from './components/header/Contact';
 import MovieForm from './components/MovieForm';
 
 
@@ -35,6 +36,7 @@ class App extends Component {
         <Route exact path="/movies" component={ MovieContainers }/>
         <Route exact path="/movies/new" component={ MovieForm} />
         <Route exact path="/movies/:id" component={MovieShow}/>
+        <Route exact path="/contact" component= { Contact } />
       </Switch>
       <Footer />
       </Router>
