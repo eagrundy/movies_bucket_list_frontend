@@ -11,11 +11,13 @@ function Contact() {
         <br/>Contact us at our office at 1-800-MOVIES. 
         <br/>You can also send us an email at movies.info@gmail.com</p>
         <br />
+        <div className="social">
         Follow us and send us a message on our social media:<br /><br />
-        <button id="twitter" onClick={() => window.open( `https://www.twitter.com`)} >Twitter</button> 
-        <button id="facebook" onClick={() => window.open( `https://www.facebook.com`)} >Facebook</button> 
-        <button id="github" onClick={() => window.open( `https://github.com/eagrundy/movies_bucket_list_frontend`)} >Github</button> 
+        <img src="twitter.png" id="twitter" onClick={() => window.open( `https://www.twitter.com`)} />
+        <img src="facebook.png" id="facebook" onClick={() => window.open( `https://www.facebook.com`)} />
+        <img src="github.jpg" id="github" onClick={() => window.open( `https://github.com/eagrundy/movies_bucket_list_frontend`)} />
         <br /><br /><br /><br />
+        </div>
     </div>
     )
 }
