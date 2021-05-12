@@ -15,9 +15,15 @@ Add movies you have never seen but would like to watch it someday.
 
 Since I am the most procrastinator in watching new and old movies on tv, and since I never watch a movie once I have missed it in the movie theater, I have decided to create an app where I am able to make a list of the movies I have never seen (most of them are classics and very famous) but that I would like to see it someday. The user can:
 -  Add a new movie to the list;
-- Click on the movie's title to see a description, a date as a deadline to watch the movie, a click button to search on google where to watch it, a button to search on google for the movie's trailer;
+- Click on the movie's title to see:
+    - a description, 
+    - a date as a deadline to watch the movie, 
+    - a click button to search on google where to watch it, 
+    - a click button to search on google for the movie's trailer;
 - Delete a movie;
-- Search a movie.
+- Search a movie by title;
+- Sort movies alphabetically;
+- Turn on/off Dark Mode.
 
 **Installation & Usage**
 * This project's backend/API was made with Ruby version: ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
