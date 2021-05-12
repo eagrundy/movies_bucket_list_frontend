@@ -3,18 +3,25 @@ import React from 'react'
 import { connect } from 'react-redux'
 import MovieContainer from '../components/MovieContainer'
 import Filters from '../components/Filters'
+import DarkMode from '../components/DarkMode'
 
 const MovieContainers = (props) => {
     
     const searchedMovies = props.movies.filter(movie => {
         return movie.title.toLowerCase().includes(props.search.toLowerCase())
     })
+
+    const sortedMovies = () => {
+        return props.alphabetical ? searchedMovies.sort((a, b) => a.title.localeCompare(b.title)) : searchedMovies
+      }
         
     return(
         <>
-        <Filters/>
+        <br /><br /><br /><br /><br /><br />
+        <DarkMode/>
+        <Filters/><br />
         <div className="containers">
-            {searchedMovies.map(movie => <MovieContainer key={movie.id} {...movie} />)}
+            {sortedMovies().map(movie => <MovieContainer key={movie.id} {...movie} />)}
         </div>
         </>
     )
