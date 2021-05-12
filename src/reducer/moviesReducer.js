@@ -3,14 +3,16 @@ const nullMovie = {
   title: "",
   image_url: "",
   description: "",
-  deadline: ""
+  deadline: "",
+  watch: ""
 }
 
 const initialMovieState = {
   movies: [],
   selectedMovie: nullMovie,
   filtersForm: {
-    search: ""
+    search: "",
+    alphabetical: false
   }
 }
   

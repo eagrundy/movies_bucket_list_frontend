@@ -7,11 +7,11 @@ import { setMovies } from '../actions/moviesActions'
 
 class MovieForm extends Component {
     state= {
-        title: " ",
-        image_url: " ",
-        category_attributes: " ",
-        description: " ",
-        watch: " "
+        title: "",
+        image_url: "",
+        category_attributes: "",
+        description: "",
+        watch: ""
     }
 
     handleChange = (event) => {
@@ -25,7 +25,6 @@ class MovieForm extends Component {
         console.log("a")
         this.props.addMovie(this.state, this.props.history);
         console.log("b")
-
     }
 
 
@@ -71,7 +70,7 @@ class MovieForm extends Component {
                        <textarea id="description" name="description" value={ this.state.description } onChange={ this.handleChange }></textarea>
                        <br /><br />
                    </div>
-                   <input type="submit" name="Add Movie" />
+                   <input type="submit" value="Add Movie" />
                </form>
                <br></br>
                <br></br>

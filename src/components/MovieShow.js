@@ -26,7 +26,7 @@ class MovieShow extends Component {
             <p><img src={ image_url } alt={ title }/></p>
             <p><strong>Description:</strong> { description }</p>
             <p><strong>Watch by:</strong> { watch }</p>
-            {/* <p><strong>Category:</strong> { category }</p> */}
+            {/* <p><strong>Category:</strong> { category_attributes }</p> */}
             <button id="buttons" onClick={() => window.open( `https://www.google.com/search?q=${title}, where to watch`)} >Click Here</button> to see where to watch the movie {title}.<br /><br />
             <button id="buttons" onClick={() => window.open( `https://www.google.com/search?q=${title}, trailer`)} >Click Here</button> to see {title}'s trailer.<br /><br />
             <button id="buttons" onClick={ history.goBack }>Back to Main Page</button><br /><br />
