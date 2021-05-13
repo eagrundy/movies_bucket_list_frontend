@@ -6,8 +6,8 @@ import { deleteMovie } from '../actions/moviesActions'
 class MovieShow extends Component {
 
     componentDidMount(){
-        // get the id from the route (i.e. grab 1 from "/restaurants/1")
-        // we give this.props.match.params a key of id when we define "/restaurants/:id" in our Route path in App.js
+        // get the id from the route (i.e. grab 1 from "/movies/1")
+        // we give this.props.match.params a key of id when we define "/movies/:id" in our Route path in App.js
         const id = this.props.match.params.id
         this.props.setSelectedMovie(id)
     }

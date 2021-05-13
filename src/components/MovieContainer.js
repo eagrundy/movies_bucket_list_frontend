@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class MovieContainer extends Component {
-
+  
   render() {
     const {title, image_url, id} = this.props;
    return (

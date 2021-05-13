@@ -34,7 +34,7 @@ const initialMovieState = {
       return {...state, filtersForm: {
         ...state.filtersForm,
         // if the payload's name is "content", this will update the
-        // content key in the reviewForm in state with the new payload value
+        // content key in the filtersForm in state with the new payload value
         [action.payload.name]: action.payload.value
       }}
         default:
