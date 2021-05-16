@@ -13,6 +13,7 @@ props.theme.mode === 'dark' ? '#EEE' : '#111'};
 }`;
 
 const DarkMode = () => {
+  // setter and getter (theme and setTheme)
     const [theme, setTheme] = useState({ mode: 'light' })
     return (
         <ThemeProvider theme={theme}>

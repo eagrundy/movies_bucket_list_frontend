@@ -6,7 +6,7 @@ import { setMovies } from '../actions/moviesActions'
 
 
 class MovieForm extends Component {
-    state= {
+    state = {
         title: "",
         image_url: "",
         category_attributes: "",

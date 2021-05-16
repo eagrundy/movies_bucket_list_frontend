@@ -1,3 +1,7 @@
+// Actions are payloads of information that send data from your application to your store. 
+// They are the only source of information for the store.
+// We send them to the store using dispatch
+
 const API = "http://localhost:3000"
 
 export const setMovies = () => {
@@ -71,4 +75,5 @@ export const handleSearchFormChange = (e) => {
     })
   }
 
+//   no payload because no data is passed around to reducers
 export const unsetMovie = () => ({type: "UNSET_MOVIE"})

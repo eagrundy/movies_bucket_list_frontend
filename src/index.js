@@ -10,10 +10,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { reducer } from './reducer/reducer'
 
-// const store = createStore(reducer, compose(
-//   applyMiddleware(thunk),
-//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
-// )
+// Store holds the complete state tree of the app
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)))
 
 ReactDOM.render(
@@ -31,3 +28,7 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+// Provider basically passes the store down to the rest of the application.
+

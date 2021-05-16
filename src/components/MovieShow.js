@@ -12,6 +12,8 @@ class MovieShow extends Component {
         this.props.setSelectedMovie(id)
     }
 
+    // it doesn’t render its child components, which get unmounted.
+    // component is being removed from the DOM
     componentWillUnmount(){
         this.props.unsetMovie()
       }
@@ -43,3 +45,4 @@ const mapStateToProps = (state) => ({
     ...state.movies.selectedMovie
 })
 export default connect( mapStateToProps, { setSelectedMovie, unsetMovie, deleteMovie } )(MovieShow)
+//  we generate the component by passing the created functions msp and mdp to connect.

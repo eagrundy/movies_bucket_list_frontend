@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import MovieContainer from '../components/MovieContainer'
 import Filters from '../components/Filters'
 import DarkMode from '../components/DarkMode'
+import NumberButton from '../components/NumberButton'
 
 const MovieContainers = (props) => {
     
@@ -18,7 +19,8 @@ const MovieContainers = (props) => {
     return(
         <>
         <br /><br /><br /><br /><br /><br />
-        <DarkMode/>
+        <DarkMode/><br />
+        <NumberButton/>
         <Filters/><br />
         <div className="containers">
             {sortedMovies().map(movie => <MovieContainer key={movie.id} {...movie} />)}
@@ -37,7 +39,8 @@ const msp = (state) => {
     }
 }
 
-// const MovieContainers = (props) => {
-    
 
+    
+// connect() is a function that injects Redux-related props into your component.
+// You can inject data and callbacks that change that data by dispatching actions.
 export default connect(msp)(MovieContainers);
